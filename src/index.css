@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @theme{
-  --breakpoint-xxsm: 321px;
-  --breakpoint-xsm: 376px;
-  --breakpoint-sm: 426px;
-  --breakpoint-md: 769px;
+  --breakpoint-xxsm: 319px;
+  --breakpoint-xsm: 374px;
+  --breakpoint-sm: 424px;
+  --breakpoint-md: 767px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1440px;
   --breakpoint-2xl: 2560px;
@@ -68,7 +68,6 @@
     }
   }
 
-
 .gradient-text {
   /* multi-color gradient */
   background: linear-gradient(
@@ -88,7 +87,21 @@
   -webkit-text-fill-color: transparent;
 
   /* animate the gradient movement */
-  animation: color-gradient-animation 8s ease infinite;
+  animation: color-gradient-animation 5s ease-in-out infinite;
+}
+
+@utility button-responsive-size{
+  @apply xxsm:px-2.5 xxsm:py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 md:font-semibold;
+}
+
+@utility gradient-button-dark {
+  background: linear-gradient(to right, #c31432, #240b36);
+  @apply button-responsive-size rounded-sm hover:opacity-60 text-white;
+}
+
+@utility gradient-button-light {
+  background: linear-gradient(to right, #659999, #f4791f);
+  @apply button-responsive-size rounded-sm hover:opacity-60 text-white;
 }
 
 @keyframes color-gradient-animation {
@@ -99,10 +112,10 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
+    --background: 250 30% 100%;
     --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
+    --card: 0 0% 95%;
 
     --primary: 250 47% 60%;
     --primary-foreground: 210 40% 98%;
@@ -149,7 +162,7 @@
 }
 
 @utility card-hover {
-  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+  @apply transition-transform duration-400 hover:scale-[1.05] hover:shadow-lg;
 }
 @utility gradient-border {
   @apply relative rounded-md;
@@ -179,8 +192,9 @@
   @apply hover:scale-[1.2] transition-all duration-300
 }
 
-
-
+.image-container img {
+  @apply md:w-[200px] xxsm:w-[200px] h-[100px] rounded-lg
+}
 
 #root {
   max-width: 100%;

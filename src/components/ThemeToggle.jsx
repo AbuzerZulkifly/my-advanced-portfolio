@@ -35,7 +35,7 @@ const ThemeToggle = () => {
   return (
     <div>
       <button onClick={toggleTheme} className={className(
-        'text-3xl fixed  right-10 z-5 rounded-full transition-colors duration-300',
+        'text-3xl fixed  right-5 z-5 rounded-full transition-colors duration-300',
         'focus:outline-hidden hover:scale-[1.3] transition-all duration-500'
       )}>
        {isDarkMode ? <LuSun fill='orange' className='text-orange-300' /> : <LuMoon fill='gray' className='text-transparent' />}

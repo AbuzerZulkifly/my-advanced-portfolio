@@ -13,7 +13,7 @@ const navItems = [
 
 const Navbar = ({brandName}) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(true)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(()=> {
     const handleScroll = () => {
@@ -49,7 +49,7 @@ const Navbar = ({brandName}) => {
       >
         {isMenuOpen ? <LuX /> : <LuMenu /> } {""}
       </button>
-      <div  className={isMenuOpen ? '' : 'hidden'}>
+      <div onClick={() => setIsMenuOpen((prev) => !prev)}  className={isMenuOpen ? '' : 'hidden'}>
       <ThemeToggle />
       </div>
       <div className={className(
