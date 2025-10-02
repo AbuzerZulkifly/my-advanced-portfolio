@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { className } from '@/lib/utils.js'
 import {LuMenu, LuX} from 'react-icons/lu'
 import ThemeToggle from './ThemeToggle.jsx'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const navItems = [
-  {name: "Home", href: "#home"},
+  {name: "Home", href: "#hero"},
   {name: "About Me", href: "#about"},
   {name: "Skills", href: "#skills"},
   {name: "Projects", href: "#projects"},

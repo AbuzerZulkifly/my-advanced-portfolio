@@ -5,6 +5,9 @@ import Navbar from '@/components/Navbar.jsx'
 import HeroSection from '@/components/HeroSection.jsx'
 import AboutMe from '@/components/AboutMe.jsx'
 import Skills from '@/components/Skills.jsx'
+import Project from '@/components/Project.jsx'
+import Contact from '@/components/Contact.jsx'
+import Footer from '@/components/Footer.jsx'
 
 const Home = () => {
   return (
@@ -25,6 +28,19 @@ const Home = () => {
         />
 
         <Skills />
+
+        <Project />
+
+        <Contact
+          mail="wonderwebdev21@gmail.com"
+          telNo="+94 77 206 7224"
+          location="Kandy, Sri Lanka"
+        />
+        
+        <Footer
+          brandName="StarTech"
+        />
+
       </main>
     </div>
   )

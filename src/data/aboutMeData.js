@@ -1,22 +1,22 @@
-import {LuCode, LuUser, LuBriefcase} from 'react-icons/lu'
+import {LuCode, LuBuilding, LuConstruction} from 'react-icons/lu'
 export const aboutMeData =[
 
   {
   id: 1,
-  icon: LuCode,
-  title: "Web Development",
-  description: "Proficient in building responsive and user-friendly web applications.",
+  icon: LuBuilding,
+  title: "Design ",
+  description: "No matter how you want your website to look, we can build it for you.",
   },
   {
   id: 2,
-  icon: LuUser,
-  title: "Problem Solving",
-  description: "Strong problem-solving skills and a keen eye for detail, ensuring optimal performance.",
+  icon: LuCode,
+  title: "Develop",
+  description: "We can build your website from the ground up by adding seamless features that ensures user satisfaction.",
   },
   {
   id: 3,
-  icon: LuBriefcase,
-  title: "Team Collaboration",
-  description: "Excellent communication and teamwork skills to work effectively in diverse teams.",
+  icon: LuConstruction,
+  title: "Maintainence",
+  description: "With great design and development, Maintence is crucial if you need your website to be up to date and running smoothly. We can help you with that as well.",
   }
 ]

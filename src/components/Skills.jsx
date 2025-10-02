@@ -10,7 +10,7 @@ const Skills = () => {
   const filteredSkills = mySkillsData.filter((skill) => activeCategory === "All" || skill.category === activeCategory);
 
   return (
-    <section id="skills" className='min-h-screen py-24 px-4 relative bg-secondary/30'>
+    <section id="skills" className='min-h-screen py-15 px-4 relative bg-secondary/30'>
       <div className="container mx-auto max-w-5xl">
         <h2 className='text-3xl md:text-4xl font-bold mb-10 text-center'>My Skills</h2>
 
