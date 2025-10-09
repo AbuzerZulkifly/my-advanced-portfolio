@@ -30,10 +30,10 @@ const HeroSection = ({name, profession, country}) => {
             Let's build something amazing together!
           </p>
           <div className='flex justify-center space-x-10 pt-5 opacity-0 animate-fade-in-delay-4'>
-            <a href="#projects" className='hover-effect gradient-button-dark '>
+            {/* <a href="#projects" className='hover-effect gradient-button-dark '>
               View My work
-            </a>
-            <a download='resume.pdf' href="" className='gradient-button-light hover-effect'>
+            </a> */}
+            <a download='resume.pdf' href="" className='gradient-button-dark hover-effect'>
               Download CV
             </a>
           </div>

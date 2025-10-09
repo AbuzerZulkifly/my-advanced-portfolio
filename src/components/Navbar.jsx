@@ -8,7 +8,7 @@ const navItems = [
   {name: "Home", href: "#hero"},
   {name: "About Me", href: "#about"},
   {name: "Skills", href: "#skills"},
-  {name: "Projects", href: "#projects"},
+  // {name: "Projects", href: "#projects"},
   {name: "Contact Me", href: "#contact"},
 ]
 
@@ -26,8 +26,9 @@ const Navbar = ({brandName}) => {
   }, [])
   return (
     <nav className={className(
-      "fixed w-full z-4 transition-all duration-300 top-2",
-      isScrolled ? "py-3, bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+      "fixed w-full z-4 transition-all duration-300 ",
+      "backdrop-blur-md",
+      isScrolled ? "py-2, bg-background/80 backdrop-blur-md shadow-xs" : "py-3.5"
     )}>
       <div className='container flex items-center justify-between'>
         <a href="#hero" className='text-2xl hover-effect font-bold '>

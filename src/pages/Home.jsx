@@ -29,8 +29,6 @@ const Home = () => {
 
         <Skills />
 
-        <Project />
-
         <Contact
           mail="wonderwebdev21@gmail.com"
           telNo="+94 77 206 7224"
