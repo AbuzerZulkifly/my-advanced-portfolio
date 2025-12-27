@@ -27,7 +27,7 @@ const Navbar = ({brandName}) => {
   return (
     <nav className={className(
       "fixed w-full z-4 transition-all duration-300 ",
-      "backdrop-blur-md",
+      "md:backdrop-blur-md",
       isScrolled ? "py-2, bg-background/80 backdrop-blur-md shadow-xs" : "py-3.5"
     )}>
       <div className='container flex items-center justify-between'>
@@ -43,13 +43,16 @@ const Navbar = ({brandName}) => {
          <ThemeToggle  />
       </div>
       </div>
+
+
+
       {/* Mobile */}
       <div className='md:hidden'>
       <button
         className='text-3xl pt-0.5 md:hidden text-foreground z-5'
         onClick={() => setIsMenuOpen((prev) => !prev)}
       >
-        {isMenuOpen ? <LuX /> : <LuMenu /> } {""}
+        {isMenuOpen ? <LuX color='red' /> : <LuMenu /> } {""}
       </button>
       <div onClick={() => setIsMenuOpen((prev) => !prev)}  className={isMenuOpen ? '' : 'hidden'}>
       <ThemeToggle />
@@ -58,7 +61,7 @@ const Navbar = ({brandName}) => {
         'fixed inset-0 bg-background/95 backdrop-blur-md z-4 flex flex-col items-center justify-center',
         'transition-all duration-500 md:hidden',
         isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none')}>
-        <div className='md:hidden flex flex-col  space-y-8'>
+        <div className='md:hidden flex flex-col bg-background/95 backdrop-blur-md top-10 space-y-8'>
           {navItems.map((items, key) => (
             <a className='hover-effect hover:text-primary text-xl' key={key} href={`${items.href}`}
               onClick={() => setIsMenuOpen(false)}

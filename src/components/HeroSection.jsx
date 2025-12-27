@@ -33,7 +33,7 @@ const HeroSection = ({name, profession, country}) => {
             {/* <a href="#projects" className='hover-effect gradient-button-dark '>
               View My work
             </a> */}
-            <a download='resume.pdf' href="" className='gradient-button-dark hover-effect'>
+            <a href='resume.pdf' download className='gradient-button-dark hover-effect'>
               Download CV
             </a>
           </div>
